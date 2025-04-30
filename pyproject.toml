@@ -5,6 +5,7 @@ description = "A python package to help you count words in a text file"
 authors = ["Dalia Tavizon-Dykstra"]
 license = "MIT"
 readme = "README.md"
+include = ["tests/*", "CHANGELOG.md"]
 
 [tool.poetry.dependencies]
 python = ">=3.12"

@@ -16,6 +16,9 @@ def get_gatsby():
     ----------
     .. [1] F. Scott Fitzgerald "The Great Gatsby"
     """
-    with resources.path("countpy.data", "gatsby.txt") as f:
+    resource = resources.files("countpy.data") / "gatsby.txt"
+    with resources.as_file(resource) as f:
         data_file_path = f
+    # with resources.path("countpy.data", "gatsby.txt") as f:
+    # data_file_path = f
     return data_file_path

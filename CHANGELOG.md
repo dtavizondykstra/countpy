@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.3.0 (2025-05-09)
+
+### Build System
+
+- Add python-semantic-releasee (PSR) package as a dev dependency
+  ([`bf9dafa`](https://github.com/dtavizondykstra/countpy/commit/bf9dafa6126781631df0270c2ec498895c7863b5))
+
+### Features
+
+- Add deprecation warning for get_gatsby() function
+  ([`ba3955f`](https://github.com/dtavizondykstra/countpy/commit/ba3955f4e88942ccaf401fa3a24e41f7dc3ca082))
+
+
 ## v0.2.0 (2025-05-06)
 
 ### Bug Fixes

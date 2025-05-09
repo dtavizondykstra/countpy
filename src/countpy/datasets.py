@@ -2,6 +2,7 @@
 
 # datasets.py
 from importlib import resources
+import warnings
 
 
 def get_gatsby():
@@ -16,6 +17,10 @@ def get_gatsby():
     ----------
     .. [1] F. Scott Fitzgerald "The Great Gatsby"
     """
+    warnings.warn(
+        "get_gatsby() will be deprecated in v3.0.0.",
+        FutureWarning,
+    )
     resource = resources.files("countpy.data") / "gatsby.txt"
     with resources.as_file(resource) as f:
         data_file_path = f
